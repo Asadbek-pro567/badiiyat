@@ -1,0 +1,159 @@
+
+
+.book__view{
+    display: flex;
+    background-image: url(../../image/ornament.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 50%;
+    img{
+        width: 520px;
+        height: 810px;
+        border-radius: 25px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    div{
+        margin-left: 50px;
+        margin-top: 50px;
+        h2{
+            color: #C9AC8C;
+        }
+        .span{
+            margin-bottom: 50px;
+            b{
+                color: #C9AC8C;
+                padding-bottom: 60px;
+            }
+        }
+        h5{
+            color: #FFFFFF99;
+            margin-top: 20px;
+            strong{
+                color: #fff;
+            }
+        }
+        .flex__h6{
+            color: #C9AC8C;
+            margin-top: 20px;
+            width: 200px;
+            margin-left: 3px;
+        }
+        .flex{
+            display: flex;
+            margin-left: 0;
+            margin-bottom: 30px;
+            hr{
+                width: 100%;
+                margin-top: 30px;
+                color: #C9AC8C;
+            }
+        }
+        p{
+            color: #FFFFFFCC;
+            font-size: 14px;
+        }
+        h6{
+            color: #C9AC8C;
+        }
+        .dispa{
+            display: flex;
+            margin-top: 0;
+            justify-content: space-between;
+            margin-left: 0;
+            .kitov{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-top: 5px;
+                margin-left: 0;
+                h6{
+                    color: #fff;
+                }
+                img{
+                    width: 30px;
+                    height: 30px;
+                    margin-left: 30px;
+                }
+                p{
+                    color: #FFFFFFCC;
+                }
+            }
+            button{
+                width: 200px;
+                height: 50px;
+                background-color: #C9AC8C;
+                color: #fff;
+                margin-top: 60px;
+            }
+        }
+    }
+}
+
+.book__text{
+    .text__display{
+        display: flex;
+        margin-left: 50px;
+        margin-top: 30px;
+        h5{
+            margin-right: 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .act{
+            color: #C9AC8C;
+        }
+    }
+    .text__txt{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        div{
+            border-radius: 15px;
+            padding: 50px 20px 20px 20px ;
+            width: 48%;
+            color: #FFFFFFCC;
+            background: linear-gradient(263.94deg, #161616 0%, #1E1E1E 98.06%);
+            position: relative;
+            margin: 0 50px;
+            &::after{
+                content: url(../../image/gr1.png);
+                z-index: 0;
+                right: 0;
+                position: absolute;
+                top: 50px;
+            }
+            &::before{
+                content: url(../../image/tirnoq.png);
+                position: absolute;
+                top: -14px;
+                left: 40px;
+            }
+        }
+        
+    }
+}
+
+.book__footer{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-size: 50%;
+    .book__list{
+        height: auto;
+        margin-top: 40px;
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        h4{
+            color: #C9AC8C;
+        }
+        a{
+            h4{
+                color: #fff;
+            }
+            text-decoration: none;
+        }
+    }
+}

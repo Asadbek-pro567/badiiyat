@@ -1,0 +1,108 @@
+
+.back{
+    
+}
+.main{
+    position: relative;
+    background-image: url(../../../image/ornament.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    z-index: 1;
+    .main__inner{
+        text-align: center;
+        color: #C9AC8C;
+        .main__categ{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            color: #fff;
+            margin-top: 30px;
+
+            .active{
+                color: #C9AC8C;
+            }
+            :hover{
+                color: #C9AC8C  ;
+                transition: 0.4s ease;
+                cursor: pointer;
+            }
+            
+        }
+        .main__users{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            padding-bottom: 100px;
+            z-index: 999;
+            a{
+                margin: 20px;
+                text-decoration: none;
+                width: 180px;
+                li{
+                    height: 100%;
+                    border-radius: 10px;
+                    position: relative;
+                    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+                    color: #fff;
+                    background-color: #191919;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    h4{
+                        font-size: 20px;
+                        color: #C9AC8C;
+                        margin-top: 20px;
+                        padding: 0 10px;
+                        margin-bottom: 20px;
+                    }
+                    img{
+                        width: 173px;
+                        height: 132px;
+                        border-radius: 15px 15px 0 0 ;
+                    }
+                    div{
+                        display: flex;
+                        justify-content: space-evenly;
+                        margin-bottom: 30px;
+                        margin-top: 20px;
+                        .books{
+                            position: relative;
+                            &::before{
+                                content: url(../../../image/kitob.png);
+                                top: 0px;
+                                left: -30px;
+                                position: absolute;
+                            }
+                        }
+                        .audio{
+                            position: relative;
+                            &::before{
+                                content: url(../../../image/audio.png);
+                                position: absolute;
+                                top: 0;
+                                left: -30px;
+                            }
+                        }
+                    }
+                    &::after{
+                        content: url(../../../image/back.svg);
+                        position: absolute;
+                        top: 90px;
+                        right: 0;
+                    }
+                    &::before{
+                        content: url(../../../image/back2.png);
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                    }
+                }
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,61 @@
+
+
+
+.book {
+    text-align: center;
+    color: #C9AC8C;
+    background-image: url(../../image/ornament.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 100%;
+    .book__ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        color: #fff;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        .active {
+            color: #C9AC8C;
+        }
+
+        :hover {
+            color: #C9AC8C;
+            transition: 0.4s ease;
+            cursor: pointer;
+        }
+    }
+    .book__list{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        color: #fff;
+        height: 100vh;
+        overflow-y: auto;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        li{
+            width: 165px;
+            height: 430px;
+            margin: 10px;
+            img{
+                height: 250px;
+                width: 165px;
+                border-radius: 15px;
+            }
+            h4{
+                color: #C9AC8C;
+                font-size: 20px;
+            }
+            h6{
+                font-size: 12px;
+            }
+            i{
+                margin-right: 10px;
+            }
+        }
+    }
+}
