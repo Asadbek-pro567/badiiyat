@@ -34,6 +34,13 @@
         height: 50px;
     }
     div{
+        h3{
+            margin-top: 8px;
+            margin-right: 20px;
+        }
+        img{
+            object-fit: cover;
+        }
         display: flex;
         h6{
             margin-top: 10px;

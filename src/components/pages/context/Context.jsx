@@ -9,8 +9,9 @@ function Provider({children}){
     const [cislaaa, setCislaaa] = useState([])
     const [order1, setOrder1] = useState([])
     const [son1, setSon1] = useState(0)
+    const [nik, setNik] = useState('')
     return(
-        <Context.Provider value={{order, setOrder, son, setSon, number, setNumber, cislaaa, setCislaaa,order1, setOrder1,son1, setSon1}}>
+        <Context.Provider value={{nik, setNik,order, setOrder, son, setSon, number, setNumber, cislaaa, setCislaaa,order1, setOrder1,son1, setSon1}}>
             {children}
         </Context.Provider>
     )

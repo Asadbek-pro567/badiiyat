@@ -7,6 +7,7 @@ import './Aboutus.scss'
 function Aboutus() {
   const {number, setNumber} = useContext(Context)
   const {cisla, setCisla} = useContext(Context)
+  const {cislaaa, setCislaaa} = useContext(Context)
   console.log(number);
   return (
     <div>
@@ -42,8 +43,8 @@ function Aboutus() {
                       <ul className='asar'>
                         {
                           item.bookObj.map((e)=>(
-                            <Link to='/books'>
-                              <li onClick={()=> setCisla(e)}>
+                            <Link to='/book-view'>
+                              <li onClick={()=> setCislaaa(e)}>
                                 <img className='book' src={e.bookImg} alt="" />
                                 <h6>{e.bookName}</h6>
                                 <span>

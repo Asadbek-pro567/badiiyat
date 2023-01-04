@@ -18,6 +18,7 @@
                     margin-left: -55px;
                     border-radius: 0px 50px 50px 0px;
                     margin-right: 50px;
+                    object-fit: cover;
                 }
                 .img__born{
                     display: flex;
@@ -115,4 +116,7 @@
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: greenyellow; 
+  }
+  a{
+    text-decoration: none;
   }

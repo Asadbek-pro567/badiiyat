@@ -10,7 +10,7 @@ import Header from '../../header/Header';
 function Book__wiew() {
     const { cislaaa, setCislaaa } = useContext(Context)
     const [count, setCount] = useState(0)
-    console.log(cislaaa.bookImg);
+    console.log(cislaaa);
 
     return (
         <div className='container'>
@@ -82,8 +82,8 @@ function Book__wiew() {
                         Users?.map((e) => (
                             cislaaa.bookId == e.id?
                             e.bookObj.map((item, i) => (
-                                <Link to='/books'>
-                                    <li key={i} onClick={()=>setCislaaa(e)}>
+                                <Link to='/book-view'>
+                                    <li key={i} onClick={()=>setCislaaa(item)}>
                                         <img src={item.bookImg} alt="" />
                                         <h4>{item.bookName}</h4>
                                         <h6>{item.nashriyot}</h6>

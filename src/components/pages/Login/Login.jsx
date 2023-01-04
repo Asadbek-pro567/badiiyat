@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Login.scss'
 import Login__logo from '../../image/Frame.svg'
 import { useNavigate } from 'react-router-dom'
+import { Context } from '../context/Context'
 
 const data = [
     {
@@ -18,10 +19,21 @@ const data = [
         id:3,
         user: 'vali',
         pass: 333
+    },
+    {
+        id:4,
+        user: 'Asadbek',
+        pass: 444
+    },
+    {
+        id:5,
+        user: 'Rozivoy',
+        pass: 555
     }
 ]
 function Login() {
     const navigate = useNavigate()
+    const {nik, setNik} = useContext(Context)
     const sign = (e)=>{
         e.preventDefault()
         let user = e.target.elements.username.value
@@ -29,6 +41,7 @@ function Login() {
         for(let i = 0; i < data.length; i++ ){
             if(data[i].user === user && data[i].pass == pass){
                 window.sessionStorage.setItem('key', '123')
+                setNik(user)
                 break
             }else{
                 window.sessionStorage.setItem('key', 'error')
@@ -37,6 +50,7 @@ function Login() {
         if(window.sessionStorage.getItem('key') == '123'){
             navigate('/home')
         }
+        
     }
   return (
     <div className='containerr'>

@@ -54,7 +54,11 @@ function Book() {
                 <ul className='book__ul'>
                     {
                         arrData.map((e, i) => (
-                            <li key={i} className={categoryy === e.name ? 'active' : categoryy.name === e.name ? 'active' : ''} onClick={() => setCategoryy(e)}>
+                            <li key={i} className={categoryy === e.name ? 'active' : categoryy.name === e.name ? 'active' : ''} onClick={(item) => (
+                                setCategoryy(e),
+                                setSon(''),
+                                console.log(item.target)
+                            )}>
                                 {e.name}
                             </li>
                         ))
